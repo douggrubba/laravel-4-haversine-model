@@ -31,7 +31,7 @@
          *  @param float $lng longitude of the point of interest
          *  @return array
          */
-        public function closest($lat, $lng, $max_distance = 25, $max_locations = 10, $units = 'miles', $fields = false)
+        public function closest( $lat, $lng, $max_distance = 25, $max_locations = 10, $units = 'miles', $fields = false )
         {
             /*
              *  Allow for changing of units of measurement
@@ -71,10 +71,10 @@
                     $lat
                 );
 
-            return DB::table($table_name)
-                ->having('distance', '<', $max_distance)
-                ->take($max_locations)
-                ->order_by('distance', 'ASC')
+            return DB::table( $table_name )
+                ->having( 'distance', '<', $max_distance )
+                ->take( $max_locations )
+                ->order_by( 'distance', 'ASC' )
                 ->get( array($fields, $disctance_select) );
         }
 
