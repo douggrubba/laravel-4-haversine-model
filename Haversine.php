@@ -9,7 +9,7 @@
      *  @access public
      *  @copyright 2012 Douglas Grubba
      *  @link http://douggdev.me
-	*/
+     */
     class Haversine extends Eloquent {
 
         /**
