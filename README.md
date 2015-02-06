@@ -1,8 +1,4 @@
-laravel-haversine-model
+laravel-haversine-model (Laravel 4)
 =======================
 
 Great circle measurements of locational data in Laravel models.
-
-## todo
-* unit tests
-* default controller to show results
